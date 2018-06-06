@@ -1,0 +1,8 @@
+
+.product-nav span {
+	display: block;
+	width: 30px;
+	height: 4px;
+	margin-bottom: 5px;
+	background: #303030;
+}
