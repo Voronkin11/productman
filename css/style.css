@@ -1,8 +1,152 @@
+@font-face {
+	font-family: 'roboto';
+	src: url('../fonts/roboto-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
-.product-nav span {
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadProRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewayblack';
+	src: url('../fonts/raleway-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #eeeeee;
+	padding-left: 150px;
+	padding-top: 50px;
+	padding-right: 150px;
+	padding-bottom: 30px;
+}
+
+.logo {
+	display: inline-block;
+	margin: 0;
+	font-family: roboto;
+	font-size: 48px;
+	line-height: .6em;
+}
+
+.product-nav {
+	display: inline-block;
+	margin: 0;
+	margin-left: 320px;
+	font-size: 0;
+}
+
+.product-nav li {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.product-nav a {
+	font-family: roboto;
+	font-size: 18px;
+	line-height: 1.5em;
+	color: #303030;
+	text-decoration: none;
+}
+
+.product-nav a:hover {
+	color: #137dff;
+	text-decoration: underline;
+}
+
+.product-nav li span {
 	display: block;
 	width: 30px;
 	height: 4px;
 	margin-bottom: 5px;
 	background: #303030;
+}
+
+.product-nav span:last-child {
+	margin: 0;
+}
+
+.product-nav li:hover span {
+	background: #137dff;
+}
+
+.slider {
+	width: 100%;
+	padding-top: 120px;
+}
+
+.black-white {
+	display: block;
+	box-sizing: border-box;
+	padding: 10px; 
+	float: left;
+	width: 55%;
+	height: 500px;
+}
+
+.black-white span{
+	display: block;
+	font-family: ralewayblack;
+	font-size: 150px;
+	line-height: 1em;
+	color: #303030;
+	text-align: right;
+}
+
+.black-white p {
+	font-family: roboto;
+	font-size: 24px;
+	line-height: 1.5em;
+	color: #303030;
+	text-align: right;
+}
+
+.black-white a {
+	color: #e10011;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.black-white a:hover {
+	color: #137dff;
+}
+
+.photo {
+	display: inline-block;
+	box-sizing: border-box;
+	padding-left: 90px;
+	width: 40%;
+	height: 500px;
+}
+
+.photo img {
+	width: 365px;
+	height: 491px;
+}
+
+.slider-btn {
+	box-sizing: border-box;
+	width: 55px;
+	height: 15px;
+	margin: auto;
+	padding-left: 3px; 
+	margin-top: 70px;
+}
+
+.slider-btn input {
+	
+}
+
+.slider-btn label {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #303030;
+	border-radius: 50%;
 }

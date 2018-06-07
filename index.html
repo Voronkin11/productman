@@ -5,10 +5,11 @@
 	<title>ProductMan</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<section class="product-man">
-		<h2>
+		<h2 class="logo">
 			ProductMan
 		</h2>
 		<ul class="product-nav">
@@ -30,21 +31,28 @@
 		</ul>
 		<div class="slider">
 			<form action="#" name="slider">
-				<div>
-					<p class="black-white">
-						<span>
-							Black& White
-						</span>
+				<div class="black-white">
+					<span>
+						Black& White
+					</span>
+					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 						<a href="#">
 							View Project
 						</a>
 					</p>
+				</div>
+				<div class="photo">
 					<img src="img/image.png" alt="headphone">
 				</div>
-				<input type="radio" name="slider">
-				<input type="radio" name="slider">
-				<input type="radio" name="slider">
+				<div class="slider-btn">
+					<input type="radio" name="slider" id="slide-1">
+					<input type="radio" name="slider" id="slide-2">
+					<input type="radio" name="slider" id="slide-3">
+					<label for="slide-1"></label>
+					<label for="slide-2"></label>
+					<label for="slide-3"></label>
+				</div>
 			</form>
 		</div>
 	</section>
