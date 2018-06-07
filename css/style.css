@@ -140,7 +140,7 @@ body {
 }
 
 .slider-btn input {
-	
+	display: none;
 }
 
 .slider-btn label {
@@ -149,4 +149,8 @@ body {
 	height: 12px;
 	background-color: #303030;
 	border-radius: 50%;
+}
+
+.slider-btn input:checked + label {
+	background-color: #e10011;
 }
