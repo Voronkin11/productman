@@ -208,6 +208,7 @@ body {
 
 .featured-product-list-speaker {
 	width: 65%;
+	position: relative;
 	float: left;
 }
 
@@ -216,6 +217,7 @@ body {
 .featured-product-list-shoes,
 .featured-product-list-armchair {
 	width: 30%;
+	position: relative;
 	margin-top: 2%;
 }
 
@@ -256,13 +258,31 @@ body {
 	margin-left: -50%;
 	transform: scale(0.9);
 }
-/*
-.featured-product-list-speaker:hover::after {
-	content: "";
+
+.featured-product-list li:hover::before {
+	content: url("../img/rectangle.png");
 	display: block;
-	width: 100%;
-	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0; 
 	background-color: #e10011;
-	z-index: 10;
+	padding-left: 10%;
+	padding-top: 120%;
+	z-index: 1;
 }
-*/
+
+.featured-product-list li:hover::after {
+	content: "Minimal Product Design";
+	display: block;
+	position: absolute;
+	width: 230px;
+	bottom: 0;
+	padding-bottom: 20%;
+	padding-left: 10%;
+	font-family: "Myriad Pro";
+	font-size: 30px;
+	color: #ffffff;
+	z-index: 2;
+}
